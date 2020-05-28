@@ -11,7 +11,7 @@ export default withSession(async (req, res) => {
     } else {
         res.writeHead(302, {
             // @ts-ignore
-            Location: `https://discord.com/oauth2/authorize?client_id=166527505610702848&scope=email+identify+guilds&redirect_uri=${encodeURIComponent(process.env.DISCORD_CALLBACK)}&response_type=code`
+            Location: `https://discord.com/oauth2/authorize?client_id=${process.env.DISCORD_CLIENT_ID}&scope=email+identify+guilds&redirect_uri=${encodeURIComponent(process.env.DISCORD_CALLBACK)}&response_type=code`
         });
         res.end();
     }
