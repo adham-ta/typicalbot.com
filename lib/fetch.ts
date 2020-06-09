@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 const _fetch = async (...args: any[]) => {
     try {
         // @ts-ignore
