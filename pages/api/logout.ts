@@ -1,4 +1,4 @@
-import withSession from '../../hocs/withSession';
+import withSession from 'hocs/withSession';
 
 export default withSession(async (req, res) => {
     req.session.destroy();

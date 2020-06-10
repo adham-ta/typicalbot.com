@@ -1,7 +1,7 @@
 import React from 'react';
 import { SWRConfig } from 'swr';
 import { AppProps } from 'next/app';
-import fetch from '../lib/fetch';
+import fetch from 'lib/fetch';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (

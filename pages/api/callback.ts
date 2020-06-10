@@ -1,5 +1,5 @@
-import fetch from '../../lib/fetch';
-import withSession from '../../hocs/withSession';
+import fetch from 'lib/fetch';
+import withSession from 'hocs/withSession';
 
 export default withSession(async (req, res) => {
     const { code } = req.query;

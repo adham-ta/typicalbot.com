@@ -1,6 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import useUser from '../hooks/useUser';
+import useUser from 'hooks/useUser';
 import Link from 'next/link';
 
 const IndexPage: NextPage = () => {
