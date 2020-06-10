@@ -1,10 +1,10 @@
 import React from 'react';
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 import useUser from '../hooks/useUser';
 import Link from 'next/link';
 
 const IndexPage: NextPage = () => {
-    const {user} = useUser({});
+    const { user } = useUser({});
 
     return (
         <React.Fragment>

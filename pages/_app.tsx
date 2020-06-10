@@ -5,8 +5,8 @@ import fetch from '../lib/fetch';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
-        <SWRConfig value={{fetcher: fetch, onError: (err) => console.error(err)}}>
-            <Component {...pageProps}/>
+        <SWRConfig value={{ fetcher: fetch, onError: (err) => console.error(err) }}>
+            <Component {...pageProps} />
         </SWRConfig>
     )
 }
