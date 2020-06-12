@@ -2,8 +2,8 @@ import React from 'react';
 import { NextPage } from 'next';
 import useUser from 'hooks/useUser';
 import Link from 'next/link';
-import Anchor from '../components/@atoms/anchor';
-import Paragraph from '../components/@atoms/paragraph';
+import Anchor from 'components/@atoms/anchor';
+import Paragraph from 'components/@atoms/paragraph';
 import Footer from 'components/@organisms/footer';
 
 const IndexPage: NextPage = () => {
