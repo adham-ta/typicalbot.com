@@ -2,10 +2,10 @@ import { withIronSession, Handler } from 'next-iron-session';
 
 const withSession = (handler: Handler) => {
     return withIronSession(handler, {
-        // @ts-ignore
         password: [
             {
                 id: 1,
+                // @ts-ignore
                 password: process.env.CURRENT_SECRET_COOKIE_PASSWORD
             }
         ],
