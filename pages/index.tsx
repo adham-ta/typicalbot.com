@@ -5,12 +5,16 @@ import Link from 'next/link';
 import Anchor from 'components/@atoms/anchor';
 import Paragraph from 'components/@atoms/paragraph';
 import Footer from 'components/@organisms/footer';
+import Head from 'next/head';
 
 const IndexPage: NextPage = () => {
     const { user } = useUser({});
 
     return (
         <React.Fragment>
+            <Head>
+                <title>TypicalBot</title>
+            </Head>
             <div className="nn nn-bg">
                 <div className="max-w-80m">
                     <div className="h-16">
