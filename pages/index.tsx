@@ -39,7 +39,7 @@ const IndexPage: NextPage = () => {
                 <div className="max-w-80m">
                     <h1 className="hero-title">Start a Discord community the right way!</h1>
                     <h3 className="hero-subtitle">TypicalBot will seamlessly help you moderate your community and provide entertainment to your members.</h3>
-                    <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=8&scope=bot">Add to Discord</Anchor>
+                    <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">Add to Discord</Anchor>
                 </div>
             </section>
             <section className="server-advertisement">
@@ -64,7 +64,7 @@ const IndexPage: NextPage = () => {
                 <div className="max-w-80m">
                     <h2>Ready to get started with TypicalBot?</h2>
                     <Anchor
-                        url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=8&scope=bot">
+                        url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">
                         Add to Discord</Anchor>
                 </div>
             </section>
