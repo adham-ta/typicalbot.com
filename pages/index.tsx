@@ -103,6 +103,7 @@ const IndexPage: NextPage = () => {
 
                 .hero .max-w-80m {
                     padding: 8em 0;
+                    background-color: #22262E;
                 }
 
                 .hero-title, .hero-subtitle {
@@ -133,6 +134,7 @@ const IndexPage: NextPage = () => {
                 }
 
                 .feature .max-w-80m {
+                    background-color: #22262E;
                     padding: 0 0 8em;
                 }
 
@@ -140,6 +142,7 @@ const IndexPage: NextPage = () => {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 1rem;
+                    padding: 4em;
                 }
 
                 .feature-container > .img {
@@ -152,7 +155,7 @@ const IndexPage: NextPage = () => {
 
                 .feature-container > .img img {
                     border-radius: 6px;
-                    border: 4px solid #22262E;
+                    border: 4px solid #1B1E24;
                 }
 
                 .feature-container > .text {
