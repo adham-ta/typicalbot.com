@@ -40,30 +40,6 @@ const IndexPage: NextPage = () => {
                     <h1 className="hero-title">TypicalBot, far from typical!</h1>
                 </div>
             </section>
-            <section className="feature">
-                <div className="container">
-                    <div className="feature-row">
-                        <div className="feature-item">
-                            <span><i className="far fa-language" /></span>
-                            <span>Multilingual</span>
-                        </div>
-                        <div className="feature-item">
-                            <span><i className="far fa-user-shield" /></span>
-                            <span>Moderation</span>
-                        </div>
-                    </div>
-                    <div className="feature-row">
-                        <div className="feature-item">
-                            <span><i className="fas fa-cogs" /></span>
-                            <span>Customization</span>
-                        </div>
-                        <div className="feature-item">
-                            <span><i className="fas fa-dice" /></span>
-                            <span>Entertainment</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <section className="server-advertisement">
                 <div className="container">
                     <div className="header">
@@ -190,45 +166,11 @@ const IndexPage: NextPage = () => {
                     margin: 0;
                 }
 
-                .feature {
-                    width: 100%;
-                    background-color: #1B1E24;
-                    font-family: Arial, sans-serif;
-                    color: #ffffff;
                 }
 
-                .feature .container {
-                    padding: 6em 0;
                 }
 
-                .feature-row {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-column-gap: 2rem;
-                    margin-bottom: 2rem;
-                }
-
-                .feature-item {
-                    background: #fff;
-                    width: 100%;
-                    height: 104px;
                     color: #22262E;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-                    border-radius: 4px;
-                    border-left: 5px solid #E3E7EA;
-                }
-
-                .feature-item > span:first-child {
-                    font-size: 40px;
-                    line-height: 104px;
-                    padding: 0 0.5em 0 1em;
-                }
-
-                .feature-item > span:last-child {
-                    font-size: 20px;
-                    font-weight: bold;
-                    line-height: 104px;
-                    vertical-align: top;
                 }
 
                 .server-advertisement {
