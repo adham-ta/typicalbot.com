@@ -19,7 +19,6 @@ const IndexPage: NextPage = () => {
                                 <span>TypicalBot</span>
                             </Link>
                             <a href="#">Documentation</a>
-                            <a href="#">Invite</a>
                             <a href="#">Support</a>
                         </div>
                         <div className="flex right-0">
