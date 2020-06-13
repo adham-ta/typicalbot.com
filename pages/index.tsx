@@ -27,7 +27,7 @@ const IndexPage: NextPage = () => {
                             <img src="https://officialnrla.com/images/nrla.png" alt="Server Icon" />
                         National Rocket League Association
                     </h2>
-                        <Anchor url="#">Join Community <i className="fal fa-long-arrow-right" /></Anchor>
+                        <Anchor url="https://discord.gg/FTtkPTU">Join Community <i className="fal fa-long-arrow-right" /></Anchor>
                     </div>
                     <div className="content">
                         <Paragraph>
