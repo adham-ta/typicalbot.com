@@ -1,44 +1,18 @@
 import React from 'react';
 import { NextPage } from 'next';
-import useUser from 'hooks/useUser';
-import Link from 'next/link';
 import Anchor from 'components/@atoms/anchor';
 import Paragraph from 'components/@atoms/paragraph';
 import Footer from 'components/@organisms/footer';
+import Header from 'components/@organisms/header';
 import Head from 'next/head';
 
 const IndexPage: NextPage = () => {
-    const { user } = useUser({});
-
     return (
         <React.Fragment>
             <Head>
                 <title>TypicalBot</title>
             </Head>
-            <div className="nn nn-bg">
-                <div className="max-w-80m">
-                    <div className="h-16">
-                        <div className="flex left-0">
-                            <Link href="/">
-                                <span>TypicalBot</span>
-                            </Link>
-                            <a href="#">Documentation</a>
-                            <a href="https://discord.gg/typicalbot">Support</a>
-                        </div>
-                        <div className="flex right-0">
-                            {
-                                (user && user.isLoggedIn)
-                                    ? <a href="#">
-                                        <img src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}?format=png&size=32`} className="profile" /> {user.username}#{user.discriminator}
-                                    </a>
-                                    : <Link href="/api/login">
-                                        <a>Login</a>
-                                    </Link>
-                            }
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Header />
             <section className="hero">
                 <div className="max-w-80m">
                     <h1 className="hero-title">Start a Discord community the right way!</h1>
@@ -74,86 +48,10 @@ const IndexPage: NextPage = () => {
             </section>
             <Footer />
             <style jsx>{`
-                a {
-                    text-decoration: none !important
-                }
-
-                .nn {
-                    display: block;
-                    width: 100%;
-                }
-
-                .nn-bg {
-                    background-color: #1B1E24;
-                }
-
                 .max-w-80m {
                     max-width: 80em;
                     margin-left: auto;
                     margin-right: auto;
-                }
-
-                .h-16 {
-                    position: relative;
-                    height: 4rem;
-                    justify-content: space-between;
-                    align-items: center;
-                    display: flex;
-                }
-
-                .flex {
-                    display: flex;
-                }
-
-                .left-0 {
-                    left: 0;
-                }
-
-                .right-0 {
-                    right: 0;
-                }
-
-                .bb {
-                    display: block;
-                }
-
-                .flex > a, .flex > span {
-                    font-size: .875rem;
-                    color: #fff;
-                    padding-left: .75rem;
-                    padding-right: .75rem;
-                    padding-top: .5rem;
-                    padding-bottom: .5rem;
-                    line-height: 1.25rem;
-                    font-weight: 600;
-                    border-radius: .375rem;
-                    transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
-                    font-family: 'Inter', sans-serif;
-                    cursor: pointer;
-                }
-
-                .flex > span {
-                    font-size: 1rem;
-                    font-weight: 700;
-                }
-
-                .flex > a:not(:first-child) {
-                    margin-left: 1rem;
-                }
-
-                .flex > a:hover {
-                    background-color: #2C313A;
-                }
-
-                .profile {
-                    border-radius: 50%;
-                    display: inline-block;
-                    vertical-align: middle;
-                    margin-right: 0.2em;
-                }
-
-                .flex > a svg, .flex > a i.fab {
-                    margin-right: 0.2em;
                 }
 
                 .hero {
