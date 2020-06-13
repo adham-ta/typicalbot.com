@@ -36,12 +36,14 @@ const IndexPage: NextPage = () => {
                 </div>
             </div>
             <section className="hero">
-                <div className="container">
-                    <h1 className="hero-title">TypicalBot, far from typical!</h1>
+                <div className="max-w-80m">
+                    <h1 className="hero-title">Start a Discord community the right way!</h1>
+                    <h3 className="hero-subtitle">TypicalBot will seamlessly help you moderate your community and provide entertainment to your members.</h3>
+                    <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=8&scope=bot">Add to Discord</Anchor>
                 </div>
             </section>
             <section className="server-advertisement">
-                <div className="container">
+                <div className="max-w-80m">
                     <div className="header">
                         <h2>
                             <img src="https://officialnrla.com/images/nrla.png" alt="Server Icon" />
@@ -59,11 +61,11 @@ const IndexPage: NextPage = () => {
                 </div>
             </section>
             <section className="simple">
-                <div className="container">
+                <div className="max-w-80m">
                     <h2>Ready to get started with TypicalBot?</h2>
                     <Anchor
                         url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=8&scope=bot">
-                        Invite to Discord</Anchor>
+                        Add to Discord</Anchor>
                 </div>
             </section>
             <Footer />
@@ -155,21 +157,36 @@ const IndexPage: NextPage = () => {
                     background-color: #1B1E24;
                     font-family: Arial, sans-serif;
                     color: #ffffff;
-                }
-
-                .hero .container {
-                    padding: 4em 0 0;
-                }
-
-                .hero-title {
                     text-align: center;
+                }
+
+                .hero .max-w-80m {
+                    padding: 8em 0;
+                }
+
+                .hero-title, .hero-subtitle {
                     margin: 0;
                 }
 
+                .hero-subtitle {
+                    font-weight: normal;
+                    margin: 1.25em 0 1.75em;
                 }
 
+                .hero .max-w-80m > :global(a) {
+                    padding: 1rem 2rem;
+                    background-color: transparent;
+                    border: 1px solid #ffffff;
+                    border-radius: 0.4rem;
+                    font-family: Arial, sans-serif;
+                    color: #ffffff;
+                    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+                    text-decoration: none;
+                    display: inline-block;
                 }
 
+                .hero .max-w-80m > :global(a):hover {
+                    background-color: #ffffff;
                     color: #22262E;
                 }
 
@@ -180,7 +197,7 @@ const IndexPage: NextPage = () => {
                     color: #ffffff;
                 }
 
-                .server-advertisement .container {
+                .server-advertisement .max-w-80m {
                     background-color: #ffffff;
                     padding: 4em;
                     color: #22262E;
@@ -245,7 +262,7 @@ const IndexPage: NextPage = () => {
                     text-align: center;
                 }
 
-                .simple .container {
+                .simple .max-w-80m {
                     background-color: #22262E;
                     padding: 4em 0;
                 }
@@ -255,28 +272,21 @@ const IndexPage: NextPage = () => {
                     margin: 0 0 1em;
                 }
 
-                .simple .container > :global(a) {
+                .simple .max-w-80m > :global(a) {
                     padding: 1rem 2rem;
                     background-color: transparent;
                     border: 1px solid #ffffff;
                     border-radius: 0.4rem;
                     font-family: Arial, sans-serif;
                     color: #ffffff;
-                    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+                    transition: color .3s ease-in-out, background-color .3s ease-in-out;
                     text-decoration: none;
                     display: inline-block;
                 }
 
-                .simple .container > :global(a):hover {
+                .simple .max-w-80m > :global(a):hover {
                     background-color: #ffffff;
                     color: #22262E;
-                }
-
-                .container {
-                    width: 100%;
-                    max-width: 60em;
-                    margin: 0 auto;
-                    position: relative;
                 }
             `}</style>
         </React.Fragment>
