@@ -28,7 +28,7 @@ const IndexPage: NextPage = () => {
                                         <img src={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}?format=png&size=32`} className="profile" /> {user.username}#{user.discriminator}
                                     </a>
                                     : <Link href="/api/login">
-                                        <a><i className="fab fa-discord"></i> Login</a>
+                                        <a>Login</a>
                                     </Link>
                             }
                         </div>
