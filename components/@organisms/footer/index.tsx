@@ -25,10 +25,9 @@ const Footer: React.FC = () => (
             }
 
             .container {
-                width: 100%;
-                max-width: 60em;
-                margin: 0 auto;
-                position: relative;
+                max-width: 80em;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .copyright {
