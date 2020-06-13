@@ -15,6 +15,9 @@ module.exports = (phase) => {
 
     return {
         env,
-        poweredByHeader: false
+        poweredByHeader: false,
+        experimental: {
+            modern: true,
+        }
     }
 }
