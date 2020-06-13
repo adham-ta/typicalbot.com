@@ -33,6 +33,32 @@ const IndexPage: NextPage = () => {
                     </div>
                 </div>
             </section>
+            <section className="feature">
+                <div className="max-w-80m">
+                    <div className="feature-container">
+                        <div className="img">
+                            <img src="/img/ItVDOeT2TG.png" />
+                        </div>
+                        <div className="text">
+                            <h1>Multilingual</h1>
+                            <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="feature">
+                <div className="max-w-80m">
+                    <div className="feature-container">
+                        <div className="text">
+                            <h1>Multilingual</h1>
+                            <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
+                        </div>
+                        <div className="img">
+                            <img src="/img/ItVDOeT2TG.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="server-advertisement">
                 <div className="max-w-80m">
                     <div className="header">
