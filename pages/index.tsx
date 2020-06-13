@@ -27,8 +27,8 @@ const IndexPage: NextPage = () => {
                             <h1>Multilingual</h1>
                             <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
                         </div>
-                        <div className="img">
-                            <img src="/img/ItVDOeT2TG.png" />
+                        <div className="img right">
+                            <img src="/img/P4lGO2aYDV.png" />
                         </div>
                     </div>
                 </div>
@@ -37,11 +37,11 @@ const IndexPage: NextPage = () => {
                 <div className="max-w-80m">
                     <div className="feature-container">
                         <div className="img">
-                            <img src="/img/ItVDOeT2TG.png" />
+                            <img src="/img/P4lGO2aYDV.png" />
                         </div>
                         <div className="text">
-                            <h1>Multilingual</h1>
-                            <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
+                            <h1>Moderation</h1>
+                            <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore officia error facere incidunt et tempore consequuntur minima exercitationem possimus natus, quam corrupti temporibus, quis ratione, similique id hic? Quod.</Paragraph>
                         </div>
                     </div>
                 </div>
@@ -50,11 +50,11 @@ const IndexPage: NextPage = () => {
                 <div className="max-w-80m">
                     <div className="feature-container">
                         <div className="text">
-                            <h1>Multilingual</h1>
-                            <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
+                            <h1>Customization</h1>
+                            <Paragraph>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quibusdam fuga omnis totam, ullam commodi, sequi doloremque tempore, hic minus quasi! Odit dignissimos temporibus excepturi dolores suscipit autem eveniet reprehenderit!</Paragraph>
                         </div>
-                        <div className="img">
-                            <img src="/img/ItVDOeT2TG.png" />
+                        <div className="img right">
+                            <img src="/img/P4lGO2aYDV.png" />
                         </div>
                     </div>
                 </div>
@@ -116,19 +116,13 @@ const IndexPage: NextPage = () => {
 
                 .hero .max-w-80m > :global(a) {
                     padding: 1rem 2rem;
-                    background-color: transparent;
-                    border: 1px solid #ffffff;
+                    background-color: #ffffff;
                     border-radius: 0.4rem;
                     font-family: Arial, sans-serif;
-                    color: #ffffff;
+                    color: #22262E;
                     transition: color .3s ease-in-out, background-color .3s ease-in-out;
                     text-decoration: none;
                     display: inline-block;
-                }
-
-                .hero .max-w-80m > :global(a):hover {
-                    background-color: #ffffff;
-                    color: #22262E;
                 }
 
                 .feature {
@@ -149,7 +143,11 @@ const IndexPage: NextPage = () => {
                 }
 
                 .feature-container > .img {
-                    text-align: center;
+                    text-align: left;
+                }
+
+                .feature-container > .img.right {
+                    text-align: right;
                 }
 
                 .feature-container > .img img {
@@ -159,6 +157,10 @@ const IndexPage: NextPage = () => {
 
                 .feature-container > .text {
                     margin: auto 0;
+                }
+
+                .feature-container > .text h1 {
+                    margin-top: 0;
                 }
 
                 .server-advertisement {
