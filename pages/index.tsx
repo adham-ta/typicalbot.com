@@ -20,6 +20,19 @@ const IndexPage: NextPage = () => {
                     <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">Add to Discord</Anchor>
                 </div>
             </section>
+            <section className="feature">
+                <div className="max-w-80m">
+                    <div className="feature-container">
+                        <div className="text">
+                            <h1>Multilingual</h1>
+                            <Paragraph>TypicalBot is currently available in 8 languages, including English, German, Spanish, French, Russian, Slovenian, Swedish, and Turkish!</Paragraph>
+                        </div>
+                        <div className="img">
+                            <img src="/img/ItVDOeT2TG.png" />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="server-advertisement">
                 <div className="max-w-80m">
                     <div className="header">
@@ -90,6 +103,36 @@ const IndexPage: NextPage = () => {
                 .hero .max-w-80m > :global(a):hover {
                     background-color: #ffffff;
                     color: #22262E;
+                }
+
+                .feature {
+                    width: 100%;
+                    background-color: #1B1E24;
+                    font-family: Arial, sans-serif;
+                    color: #ffffff;
+                }
+
+                .feature .max-w-80m {
+                    padding: 0 0 8em;
+                }
+
+                .feature-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 1rem;
+                }
+
+                .feature-container > .img {
+                    text-align: center;
+                }
+
+                .feature-container > .img img {
+                    border-radius: 6px;
+                    border: 4px solid #22262E;
+                }
+
+                .feature-container > .text {
+                    margin: auto 0;
                 }
 
                 .server-advertisement {
