@@ -19,7 +19,7 @@ const IndexPage: NextPage = () => {
                                 <span>TypicalBot</span>
                             </Link>
                             <a href="#">Documentation</a>
-                            <a href="#">Support</a>
+                            <a href="https://discord.gg/typicalbot">Support</a>
                         </div>
                         <div className="flex right-0">
                             {
