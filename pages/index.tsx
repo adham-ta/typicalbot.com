@@ -5,6 +5,7 @@ import Paragraph from 'components/@atoms/paragraph';
 import Footer from 'components/@organisms/footer';
 import Header from 'components/@organisms/header';
 import Head from 'next/head';
+import Hero from 'components/@organisms/hero';
 
 const IndexPage: NextPage = () => {
     return (
@@ -13,13 +14,7 @@ const IndexPage: NextPage = () => {
                 <title>TypicalBot</title>
             </Head>
             <Header />
-            <section className="hero">
-                <div className="max-w-80m">
-                    <h1 className="hero-title">Start a Discord community the right way!</h1>
-                    <h3 className="hero-subtitle">TypicalBot will seamlessly help you moderate your community and provide entertainment to your members.</h3>
-                    <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">Add to Discord</Anchor>
-                </div>
-            </section>
+            <Hero title="Start a Discord community!" subtitle="TypicalBot will seamlessly help you moderate your community and provide entertainment to your members." image="/img/hero.png" />
             <section className="feature">
                 <div className="max-w-80m">
                     <div className="feature-container">
@@ -91,39 +86,6 @@ const IndexPage: NextPage = () => {
                     max-width: 80em;
                     margin-left: auto;
                     margin-right: auto;
-                }
-
-                .hero {
-                    width: 100%;
-                    background-color: #1B1E24;
-                    font-family: Arial, sans-serif;
-                    color: #ffffff;
-                    text-align: center;
-                }
-
-                .hero .max-w-80m {
-                    padding: 8em 0;
-                    background-color: #22262E;
-                }
-
-                .hero-title, .hero-subtitle {
-                    margin: 0;
-                }
-
-                .hero-subtitle {
-                    font-weight: normal;
-                    margin: 1.25em 0 1.75em;
-                }
-
-                .hero .max-w-80m > :global(a) {
-                    padding: 1rem 2rem;
-                    background-color: #ffffff;
-                    border-radius: 0.4rem;
-                    font-family: Arial, sans-serif;
-                    color: #22262E;
-                    transition: color .3s ease-in-out, background-color .3s ease-in-out;
-                    text-decoration: none;
-                    display: inline-block;
                 }
 
                 .feature {
