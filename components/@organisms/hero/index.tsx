@@ -31,7 +31,7 @@ const Hero: React.FC<Props> = ({ title, subtitle, image }) => (
                 background-color: #1B1E24;
                 font-family: Arial, sans-serif;
                 color: #ffffff;
-                padding: 8em 0;
+                padding: 6em 0;
             }
 
             .container {
