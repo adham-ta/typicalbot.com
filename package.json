@@ -27,7 +27,7 @@
         "nprogress": "^0.2.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "swr": "^0.2.2"
+        "swr": "^0.2.3"
     },
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
