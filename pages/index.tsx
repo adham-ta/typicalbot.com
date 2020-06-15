@@ -7,6 +7,7 @@ import Hero from 'components/@organisms/hero';
 import Banner from 'components/@organisms/banner';
 import Feature from 'components/@organisms/feature';
 import FeaturedArticle from 'components/@organisms/featured-article';
+import GettingReady from 'components/@organisms/getting-ready';
 
 const IndexPage: NextPage = () => {
     return (
@@ -19,6 +20,7 @@ const IndexPage: NextPage = () => {
             <Banner text="Join over 66,000 other community owners that are using TypicalBot in their communities!" />
             <Feature />
             <FeaturedArticle />
+            <GettingReady />
             <Footer />
         </React.Fragment>
     )
