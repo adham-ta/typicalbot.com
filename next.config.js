@@ -18,6 +18,15 @@ module.exports = (phase) => {
         poweredByHeader: false,
         experimental: {
             modern: true,
+            redirects() {
+                return [
+                    {
+                        source: '/docs{/}?',
+                        permanent: true,
+                        destination: '/docs/introduction'
+                    }
+                ]
+            }
         }
     }
 }
