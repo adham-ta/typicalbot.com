@@ -6,6 +6,7 @@ import Header from 'components/@organisms/header';
 import Hero from 'components/@organisms/hero';
 import Banner from 'components/@organisms/banner';
 import Feature from 'components/@organisms/feature';
+import FeaturedArticle from 'components/@organisms/featured-article';
 
 const IndexPage: NextPage = () => {
     return (
@@ -17,6 +18,7 @@ const IndexPage: NextPage = () => {
             <Hero title="Start a Discord community!" subtitle="TypicalBot will seamlessly help you moderate your community and provide entertainment to your members." image="/img/hero.png" />
             <Banner text="Join over 66,000 other community owners that are using TypicalBot in their communities!" />
             <Feature />
+            <FeaturedArticle />
             <Footer />
         </React.Fragment>
     )
