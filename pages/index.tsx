@@ -16,7 +16,7 @@ const IndexPage: NextPage = () => {
                 <title>TypicalBot</title>
             </Head>
             <Header />
-            <Hero title="Start a Discord community!" subtitle="TypicalBot will seamlessly help you moderate your community and provide entertainment to your members." image="/img/hero.png" />
+            <Hero title="Start your Discord community off right!" subtitle="TypicalBot will seamlessly help you moderate your community and provide entertainment to your members." image="/img/hero.png" />
             <Banner text="Join over 66,000 other community owners that are using TypicalBot in their communities!" />
             <Feature />
             <FeaturedArticle />
