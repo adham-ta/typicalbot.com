@@ -48,7 +48,7 @@ const Feature: React.FC = () => (
 
             .feature-container > :global(a) {
                 flex-basis: 33.3%;
-                background: #fff;
+                background: #2C313A;
                 min-height: 150px;
                 padding: 60px 30px;
                 display: flex;
@@ -98,7 +98,7 @@ const Feature: React.FC = () => (
             .title {
                 font-weight: 600;
                 position: relative;
-                color: #091517;
+                color: #fff;
                 margin: 0;
             }
 
