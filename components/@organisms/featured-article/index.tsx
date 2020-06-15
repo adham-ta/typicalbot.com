@@ -4,7 +4,6 @@ const FeaturedArticle = () => (
     <React.Fragment>
         <div className="featured-article">
             <div className="container">
-                <h2 className="title">Read the latest article from our blog!</h2>
                 <article>
                     <h2 className="article-title">The Next Generation of TypicalBot</h2>
                     <div className="article-date">
@@ -15,23 +14,30 @@ const FeaturedArticle = () => (
                             <img src="https://cdn.discordapp.com/avatars/187342661060001792/103798a6382efcdf4831b7dc0399ab15?format=png&size=32" />
                             <span className="name">
                                 <span className="real-name">Nicholas Sylke</span>
-                                <a href="#" className="twitter">@nsylke</a>
+                                <a href="https://twitter.com/nsylke" className="twitter">@nsylke</a>
                             </span>
                         </div>
                         <div className="author">
                             <img src="https://cdn.discordapp.com/avatars/176610059684544512/8d941ed80b3c524508f01e8fc720c224.png?format=png&size=32" />
                             <span className="name">
                                 <span className="real-name">Tyler Richards</span>
-                                <a href="#" className="twitter">@tjrgg</a>
+                                <a href="https://twitter.com/tjrgg" className="twitter">@tjrgg</a>
                             </span>
                         </div>
                     </div>
                     <div className="article-content">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur, enim quisquam praesentium magnam laudantium amet in ipsam repellat doloremque odit porro cumque ab iure molestias libero nisi nostrum at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat doloribus tempore a autem eum, excepturi itaque amet laudantium voluptatem voluptates aspernatur pariatur impedit quos atque voluptatibus enim suscipit obcaecati explicabo.</p>
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore odio at quia impedit placeat, ex sint laborum iure sequi! Reiciendis facilis impedit, a culpa magnam nisi tempore incidunt omnis veniam!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente facere natus iste itaque odio, deserunt recusandae consectetur soluta quas! Obcaecati, quas! Vel, et corporis? Possimus accusantium hic nostrum molestias provident?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorem quasi assumenda est? Deleniti nobis ducimus, necessitatibus voluptatem labore, repudiandae maiores qui quis assumenda sequi cumque! At veritatis possimus totam.</li>
+                        </ul>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur, enim quisquam praesentium magnam laudantium amet in ipsam repellat doloremque odit porro cumque ab iure molestias libero nisi nostrum at. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat doloribus tempore a autem eum, excepturi itaque amet laudantium voluptatem voluptates aspernatur pariatur impedit quos atque voluptatibus enim suscipit obcaecati explicabo.</p>
-                        <a href="#" className="continue">Continue reading <i className="fal fa-long-arrow-right" /></a>
                     </div>
                 </article>
+                <div className="button-container">
+                    <a href="#" className="read-more">Read more</a>
+                </div>
             </div>
         </div>
         <style jsx>{`
@@ -48,15 +54,8 @@ const FeaturedArticle = () => (
                 background-color: #fff;
             }
 
-            .title {
-                margin: 0;
-                padding: 1em 0;
-                background-color: rgba(0, 0, 0, 0.015);
-                text-align: center;
-            }
-
             article {
-                padding: 2em 3em;
+                padding: 3em 3em 0;
             }
 
             .article-title {
@@ -113,13 +112,15 @@ const FeaturedArticle = () => (
                 padding: 1em;
             }
 
-            .continue {
-                color: #0074de;
-                text-decoration: none;
+            .button-container {
+                text-align: center;
+                padding: 0 0 3em;
             }
 
-            .continue > svg {
-                line-height: 1.5;
+            .read-more {
+                color: #0074de;
+                text-decoration: none;
+                font-size: 14px;
             }
         `}</style>
     </React.Fragment>
