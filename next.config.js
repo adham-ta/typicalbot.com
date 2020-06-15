@@ -24,6 +24,11 @@ module.exports = (phase) => {
                         source: '/docs{/}?',
                         permanent: true,
                         destination: '/docs/introduction'
+                    },
+                    {
+                        source: '/changelog',
+                        permanent: false,
+                        destination: 'https://github.com/sylkellc/typicalbot/blob/3.x/CHANGELOG.md'
                     }
                 ]
             }

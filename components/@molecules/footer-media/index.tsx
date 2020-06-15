@@ -14,7 +14,7 @@ const FooterMedia: React.FC = () => (
             <FooterMediaList items={[
                 { text: 'Resources' },
                 { url: '#', text: 'Blog' },
-                { url: 'https://github.com/sylkellc/typicalbot/blob/3.x/CHANGELOG.md', text: 'Changelog' },
+                { url: '/changelog', text: 'Changelog' },
                 { url: '#', text: 'Documentation' }
             ]} />
             <FooterMediaList items={[
