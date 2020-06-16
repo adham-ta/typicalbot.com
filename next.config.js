@@ -29,6 +29,16 @@ module.exports = (phase) => {
                         source: '/changelog',
                         permanent: false,
                         destination: 'https://github.com/sylkellc/typicalbot/blob/3.x/CHANGELOG.md'
+                    },
+                    {
+                        source: '/support',
+                        permanent: false,
+                        destination: 'https://discord.gg/typicalbot'
+                    },
+                    {
+                        source: '/invite',
+                        permanent: false,
+                        destination: 'https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot'
                     }
                 ]
             }

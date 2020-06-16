@@ -28,7 +28,7 @@ const FooterMedia: React.FC = () => (
             <FooterMediaList items={[
                 { text: 'Support' },
                 { url: 'mailto:support@typicalbot.com', text: 'Contact Us' },
-                { url: 'https://discord.gg/typicalbot', text: 'Discord Community' }
+                { url: '/support', text: 'Discord Community' }
             ]} />
         </div>
         <style jsx>{`

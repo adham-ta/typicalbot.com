@@ -16,7 +16,7 @@ const HeaderNavigation: React.FC = () => {
                     </Link>
                     <Anchor url="/">Blog</Anchor>
                     <Anchor url="/docs/introduction">Documentation</Anchor>
-                    <Anchor url="https://discord.gg/typicalbot">Support</Anchor>
+                    <Anchor url="/support">Support</Anchor>
                 </div>
                 <div className="flex right-0">
                     {

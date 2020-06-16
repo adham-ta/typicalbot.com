@@ -16,7 +16,7 @@ const Hero: React.FC<Props> = ({ title, subtitle, image }) => (
                     <h1 className="title">{title}</h1>
                     <Paragraph>{subtitle}</Paragraph>
                     <div className="button-container">
-                        <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">Add to Discord</Anchor>
+                        <Anchor url="/invite">Add to Discord</Anchor>
                         <Anchor url="/">Learn more</Anchor>
                     </div>
                 </article>

@@ -7,7 +7,7 @@ const GettingReady: React.FC = () => (
             <div className="container">
                 <h2 className="title">Ready to get started with TypicalBot?</h2>
                 <div className="button-container">
-                    <Anchor url="https://discordapp.com/oauth2/authorize?client_id=166527505610702848&permissions=432532567&scope=bot">Add to Discord</Anchor>
+                    <Anchor url="/invite">Add to Discord</Anchor>
                 </div>
             </div>
         </div>
