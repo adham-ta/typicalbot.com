@@ -54,7 +54,7 @@ export default withSession(async (req, res) => {
             }
         });
 
-        req.session.set('guilds', guilds);
+        req.session.set('guilds', guilds.toString());
         await req.session.save();
 
         res.writeHead(302, {
