@@ -14,6 +14,7 @@ const HeaderNavigation: React.FC = () => {
                     <Link href="/">
                         <span>TypicalBot</span>
                     </Link>
+                    <Anchor url="/">Blog</Anchor>
                     <Anchor url="/docs/introduction">Documentation</Anchor>
                     <Anchor url="https://discord.gg/typicalbot">Support</Anchor>
                 </div>
