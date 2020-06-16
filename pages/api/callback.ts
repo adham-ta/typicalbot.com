@@ -47,6 +47,17 @@ export default withSession(async (req, res) => {
         req.session.set('user', user);
         await req.session.save();
 
+        const guilds = await fetch('https://discord.com/api/users/@me/guilds', {
+            method: 'GET',
+            headers: {
+                Authorization: `${auth.tokenType} ${auth.accessToken}`,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        req.session.set('guilds', guilds);
+        await req.session.save();
+
         res.writeHead(302, {
             Location: '/'
         });
