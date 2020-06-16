@@ -10,7 +10,8 @@ module.exports = (phase) => {
             if (isProd) return 'https://typicalbot.com/api';
             if (isCanary) return 'https://canary.typicalbot.com/api';
             if (isDev) return 'http://localhost:3000/api';
-        })()
+        })(),
+        DISCORD_API: 'https://discord.com/api'
     };
 
     return {

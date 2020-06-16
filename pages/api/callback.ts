@@ -3,7 +3,6 @@ import withSession from 'hocs/withSession';
 
 export default withSession(async (req, res) => {
     const { code } = req.query;
-    const url = 'https://discord.com/api/oauth2/token';
 
     const opts = {
         client_id: process.env.DISCORD_CLIENT_ID,
@@ -23,7 +22,7 @@ export default withSession(async (req, res) => {
 
     try {
         // @ts-ignore
-        const { access_token: accessToken, token_type: tokenType } = await fetch(url, {
+        const { access_token: accessToken, token_type: tokenType } = await fetch(`${process.env.DISCORD_API}/oauth2/token`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -35,7 +34,7 @@ export default withSession(async (req, res) => {
         req.session.set('auth', auth);
         await req.session.save();
 
-        const { id, username, discriminator, avatar, email } = await fetch('https://discord.com/api/users/@me', {
+        const { id, username, discriminator, avatar, email } = await fetch(`${process.env.DISCORD_API}/users/@me`, {
             method: 'GET',
             headers: {
                 Authorization: `${auth.tokenType} ${auth.accessToken}`,
@@ -47,7 +46,7 @@ export default withSession(async (req, res) => {
         req.session.set('user', user);
         await req.session.save();
 
-        const guilds = await fetch('https://discord.com/api/users/@me/guilds', {
+        const guilds = await fetch(`${process.env.DISCORD_API}/users/@me/guilds`, {
             method: 'GET',
             headers: {
                 Authorization: `${auth.tokenType} ${auth.accessToken}`,
