@@ -7,7 +7,7 @@ type AnchorProps = {
 }
 
 const Anchor: React.FC<AnchorProps> = ({ url, as, children }) => {
-    if (url.startsWith('https://')) {
+    if (!url.startsWith('/')) {
         return <a href={url}>{children}</a>
     } else {
         return as
