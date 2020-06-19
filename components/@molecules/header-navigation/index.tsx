@@ -20,7 +20,7 @@ const HeaderNavigation: React.FC = () => {
                 </div>
                 <div className="flex right-0">
                     {
-                        (user && user.isLoggedIn)
+                        (user?.isLoggedIn)
                             ? <Anchor url="/dashboard"><HeaderProfile url={`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}?format=png&size=32`} /> {user.username}#{user.discriminator}</Anchor>
                             : <Anchor url="/api/login">Login</Anchor>
                     }
@@ -77,7 +77,7 @@ const HeaderNavigation: React.FC = () => {
                 }
             `}</style>
         </React.Fragment>
-    )
-}
+    );
+};
 
 export default HeaderNavigation;

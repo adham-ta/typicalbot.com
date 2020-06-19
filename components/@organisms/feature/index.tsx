@@ -179,6 +179,6 @@ const Feature: React.FC = () => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default Feature;

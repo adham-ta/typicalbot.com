@@ -4,6 +4,6 @@ import IndexPage from 'components/@pages/index-page';
 
 const Index: NextPage = () => (
     <IndexPage />
-)
+);
 
 export default Index;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Anchor from 'components/@atoms/anchor';
 
-type Props = {
-    items: { url?: string, text: string }[]
+interface Props {
+    items: { url?: string; text: string }[];
 }
 
 const FooterMediaList: React.FC<Props> = ({ items }) => (

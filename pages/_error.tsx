@@ -8,8 +8,8 @@ const MyError = ({ statusCode, hasGetInitialPropsRun, err }: ErrorProps) => {
         Sentry.captureException(err);
     }
 
-    return <NextErrorComponent statusCode={statusCode} />
-}
+    return <NextErrorComponent statusCode={statusCode} />;
+};
 
 // @ts-ignore
 MyError.getInitialProps = async ({ res, err, asPath }) => {
@@ -22,7 +22,7 @@ MyError.getInitialProps = async ({ res, err, asPath }) => {
     if (res?.statusCode === 404) {
         return {
             statusCode: 404
-        }
+        };
     }
 
     if (err) {
@@ -35,6 +35,6 @@ MyError.getInitialProps = async ({ res, err, asPath }) => {
     );
 
     return errorInitialProps;
-}
+};
 
 export default MyError;

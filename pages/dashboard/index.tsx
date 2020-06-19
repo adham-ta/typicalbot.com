@@ -4,6 +4,6 @@ import DashboardPage from 'components/@pages/dashboard-page';
 
 const Dashboard: NextPage = () => (
     <DashboardPage />
-)
+);
 
 export default Dashboard;

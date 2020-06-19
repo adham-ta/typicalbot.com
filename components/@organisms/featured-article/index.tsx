@@ -124,6 +124,6 @@ const FeaturedArticle = () => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default FeaturedArticle;

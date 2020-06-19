@@ -1,7 +1,7 @@
 import React from 'react';
 
-type Props = {
-    text: string
+interface Props {
+    text: string;
 }
 
 const Banner: React.FC<Props> = ({ text }) => (
@@ -36,6 +36,6 @@ const Banner: React.FC<Props> = ({ text }) => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default Banner;

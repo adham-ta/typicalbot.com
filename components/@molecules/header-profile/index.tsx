@@ -1,7 +1,7 @@
 import React from 'react';
 
-type Props = {
-    url: string
+interface Props {
+    url: string;
 }
 
 const HeaderProfile: React.FC<Props> = ({ url }) => (
@@ -16,6 +16,6 @@ const HeaderProfile: React.FC<Props> = ({ url }) => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default HeaderProfile;

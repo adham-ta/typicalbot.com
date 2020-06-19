@@ -3,8 +3,8 @@ import Head from 'next/head';
 import Header from 'components/@organisms/header';
 import Footer from 'components/@organisms/footer';
 
-type Props = {
-    title?: string
+interface Props {
+    title?: string;
 }
 
 const Layout: React.FC<Props> = ({ title, children }) => (

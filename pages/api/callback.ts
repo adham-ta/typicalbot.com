@@ -11,9 +11,9 @@ export default withSession(async (req, res) => {
         code: code,
         redirect_uri: process.env.DISCORD_CALLBACK,
         scope: 'identify email guilds'
-    }
+    };
 
-    let string = "";
+    let string = '';
 
     for (const [key, value] of Object.entries(opts)) {
         if (!value) continue;

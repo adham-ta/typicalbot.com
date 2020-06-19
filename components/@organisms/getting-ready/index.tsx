@@ -61,6 +61,6 @@ const GettingReady: React.FC = () => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default GettingReady;

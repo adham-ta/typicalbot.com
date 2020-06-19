@@ -4,6 +4,6 @@ import DocsPage from 'components/@pages/docs-page';
 
 const Docs: NextPage = () => (
     <DocsPage />
-)
+);
 
 export default Docs;

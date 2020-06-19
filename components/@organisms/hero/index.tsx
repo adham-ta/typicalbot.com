@@ -2,10 +2,10 @@ import React from 'react';
 import Anchor from 'components/@atoms/anchor';
 import Paragraph from 'components/@atoms/paragraph';
 
-type Props = {
-    title: string,
-    subtitle: string,
-    image: string
+interface Props {
+    title: string;
+    subtitle: string;
+    image: string;
 }
 
 const Hero: React.FC<Props> = ({ title, subtitle, image }) => (
@@ -139,6 +139,6 @@ const Hero: React.FC<Props> = ({ title, subtitle, image }) => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default Hero;

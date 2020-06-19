@@ -19,6 +19,6 @@ const _fetch = async (...args: any[]) => {
 
         throw error;
     }
-}
+};
 
 export default _fetch;

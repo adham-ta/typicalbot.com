@@ -14,6 +14,6 @@ const useUser = ({redirectTo = '', redirectIfFound = false}) => {
     }, [user, redirectIfFound, redirectTo]);
 
     return { user, mutateUser };
-}
+};
 
 export default useUser;

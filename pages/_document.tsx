@@ -2,11 +2,13 @@ import React from 'react';
 import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document';
 
 class MyDocument extends Document {
+    // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
     static async getInitialProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx);
         return { ...initialProps };
     }
 
+    // eslint-disable-next-line @typescript-eslint/explicit-member-accessibility
     render() {
         return (
             <Html lang="en">
@@ -38,7 +40,7 @@ class MyDocument extends Document {
                     <NextScript />
                 </body>
             </Html>
-        )
+        );
     }
 }
 
