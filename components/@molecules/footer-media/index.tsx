@@ -21,8 +21,8 @@ const FooterMedia: React.FC = () => (
                 { text: 'Company' },
                 { url: '#', text: 'About' },
                 { url: '#', text: 'Careers' },
-                { url: 'https://sylke.co/terms', text: 'Terms of Service' },
-                { url: 'https://sylke.co/privacy', text: 'Privacy Policy' },
+                { url: 'https://typicalbot.com/terms', text: 'Terms of Service' },
+                { url: 'https://tyoicalbot.com/privacy', text: 'Privacy Policy' },
                 { url: '#', text: 'Security' }
             ]} />
             <FooterMediaList items={[
