@@ -21,8 +21,9 @@ export default withSession(async (req, res) => {
     }
 
     try {
+        // dispose of accessToken and tokenType after we retrieve the user and guilds
         // @ts-ignore
-        const { access_token: accessToken, token_type: tokenType } = await fetch(`${process.env.DISCORD_API}/oauth2/token`, {
+        const { access_token: accessToken, token_type: tokenType } = await fetch(`${process.env.NEXT_PUBLIC_DISCORD_API}/oauth2/token`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -30,14 +31,10 @@ export default withSession(async (req, res) => {
             body: string.substring(1)
         });
 
-        const auth = { accessToken, tokenType };
-        req.session.set('auth', auth);
-        await req.session.save();
-
-        const { id, username, discriminator, avatar, email } = await fetch(`${process.env.DISCORD_API}/users/@me`, {
+        const { id, username, discriminator, avatar, email } = await fetch(`${process.env.NEXT_PUBLIC_DISCORD_API}/users/@me`, {
             method: 'GET',
             headers: {
-                Authorization: `${auth.tokenType} ${auth.accessToken}`,
+                Authorization: `${tokenType} ${accessToken}`,
                 'Content-Type': 'application/json'
             }
         });
@@ -46,10 +43,11 @@ export default withSession(async (req, res) => {
         req.session.set('user', user);
         await req.session.save();
 
-        const guilds = await fetch(`${process.env.DISCORD_API}/users/@me/guilds`, {
+        // replace to only store a list of guild ids - this will be verified via our api later on
+        const guilds = await fetch(`${process.env.NEXT_PUBLIC_DISCORD_API}/users/@me/guilds`, {
             method: 'GET',
             headers: {
-                Authorization: `${auth.tokenType} ${auth.accessToken}`,
+                Authorization: `${tokenType} ${accessToken}`,
                 'Content-Type': 'application/json'
             }
         });

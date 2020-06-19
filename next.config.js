@@ -6,12 +6,12 @@ module.exports = (phase) => {
     const isProd = phase === PHASE_PRODUCTION_BUILD && process.env.CANARY !== 'true';
 
     const env = {
-        NEXT_API_ROUTE: (() => {
+        NEXT_PUBLIC_LOCAL_API: (() => {
             if (isProd) return 'https://typicalbot.com/api';
             if (isCanary) return 'https://canary.typicalbot.com/api';
             if (isDev) return 'http://localhost:3000/api';
         })(),
-        DISCORD_API: 'https://discord.com/api'
+        NEXT_PUBLIC_DISCORD_API: 'https://discord.com/api'
     };
 
     return {
