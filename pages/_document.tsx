@@ -19,12 +19,11 @@ class MyDocument extends Document {
 
                     <meta name="description" content="TypicalBot is far from typical. It's stable, lightning fast, and easy to use." />
 
-                    <meta property="og:title" content="TypicalBot" />
                     <meta property="og:description" content="TypicalBot is far from typical. It's stable, lightning fast, and easy to use." />
                     <meta property="og:type" content="website" />
 
                     <meta name="twitter:card" content="summary" />
-                    <meta name="twitter:creator" content="@typical_bot" />
+                    <meta name="twitter:creator" content="@Typical_Bot" />
                     <meta name="twitter:title" content="TypicalBot" />
                     <meta name="twitter:description" content="TypicalBot is far from typical. It's stable, lightning fast, and easy to use." />
 

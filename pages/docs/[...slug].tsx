@@ -1,15 +1,9 @@
 import React from 'react';
 import { NextPage } from 'next';
-import Head from 'next/head';
-import Header from 'components/@organisms/header';
+import DocsPage from 'components/@pages/docs-page';
 
-const DocsPage: NextPage = () => (
-    <React.Fragment>
-        <Head>
-            <title>TypicalBot Documentation</title>
-        </Head>
-        <Header />
-    </React.Fragment>
+const Docs: NextPage = () => (
+    <DocsPage />
 )
 
-export default DocsPage;
+export default Docs;
