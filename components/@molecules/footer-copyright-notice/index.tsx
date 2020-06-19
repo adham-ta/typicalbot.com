@@ -6,7 +6,7 @@ type Props = {
 }
 
 const FooterCopyrightNotice: React.FC<Props> = ({ year }) => (
-    <Paragraph>Copyright &copy; {year} Sylke LLC. All rights reserved.</Paragraph>
+    <Paragraph>Copyright &copy; {year} TypicalBot LLC. All rights reserved.</Paragraph>
 );
 
 export default FooterCopyrightNotice;
