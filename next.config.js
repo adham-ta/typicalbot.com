@@ -1,4 +1,6 @@
 const { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } = require('next/constants');
+const withSourceMaps = require('@zeit/next-source-maps')();
+const SentryWebpackPlugin = require('@sentry/webpack-plugin');
 
 module.exports = (phase) => {
     const isDev = phase === PHASE_DEVELOPMENT_SERVER;
@@ -11,10 +13,11 @@ module.exports = (phase) => {
             if (isCanary) return 'https://canary.typicalbot.com/api';
             if (isDev) return 'http://localhost:3000/api';
         })(),
-        NEXT_PUBLIC_DISCORD_API: 'https://discord.com/api'
+        NEXT_PUBLIC_DISCORD_API: 'https://discord.com/api',
+        NEXT_PUBLIC_SENTRY_DSN: 'https://5348c51f82d945b398b47c0b640cfeff@o161567.ingest.sentry.io/5270885'
     };
 
-    return {
+    return withSourceMaps({
         env,
         poweredByHeader: false,
         experimental: {
@@ -43,6 +46,24 @@ module.exports = (phase) => {
                     }
                 ]
             }
+        },
+        webpack: (config, options) => {
+            if (!options.isServer) {
+                config.resolve.alias['@sentry/node'] = '@sentry/browser';
+            }
+
+            if (isProd) {
+                config.plugins.push(
+                    new SentryWebpackPlugin({
+                        include: '.next',
+                        ignore: ['node_modules'],
+                        urlPrefix: '~/_next',
+                        release: options.buildId
+                    })
+                );
+            }
+
+            return config;
         }
-    }
+    });
 }
