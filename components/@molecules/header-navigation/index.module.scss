@@ -1,0 +1,48 @@
+.nav {
+    position: relative;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > :global(a), .flex > span {
+    text-decoration: none;
+    font-size: .875rem;
+    color: #fff;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    border-radius: .375rem;
+    transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.flex > span {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.flex > :global(a):not(:first-child) {
+    margin-left: 1rem;
+}
+
+.flex > :global(a):hover {
+    background-color: #2C313A;
+}
+
+.left0 {
+    left: 0;
+}
+
+.right0 {
+    right: 0;
+}

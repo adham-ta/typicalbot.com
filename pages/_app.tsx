@@ -5,6 +5,7 @@ import fetch from 'lib/fetch';
 import NProgress from 'nprogress';
 import Router from 'next/router';
 import * as Sentry from '@sentry/node';
+import 'components/@organisms/layout/layout.scss';
 
 Sentry.init({
     enabled: process.env.NODE_ENV === 'production',
