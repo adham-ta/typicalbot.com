@@ -33,7 +33,7 @@
         "nprogress": "^0.2.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "sass": "^1.26.8",
+        "sass": "^1.26.9",
         "swr": "^0.2.3"
     },
     "devDependencies": {
