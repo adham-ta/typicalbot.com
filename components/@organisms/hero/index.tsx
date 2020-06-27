@@ -17,7 +17,7 @@ const Hero: React.FC<Props> = ({ title, subtitle, image }) => (
                 <Paragraph>{subtitle}</Paragraph>
                 <div className={classes.buttonContainer}>
                     <Anchor url="/invite">Add to Discord</Anchor>
-                    <Anchor url="/">Learn more</Anchor>
+                    <Anchor url="/">Upgrade to Pro</Anchor>
                 </div>
             </article>
             <figure className={classes.figure}>
