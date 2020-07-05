@@ -1,0 +1,6 @@
+[submodule "_policies"]
+	path = _policies
+	url = git@github.com:typicalbot/policies.git
+[submodule "_docs"]
+	path = _docs
+	url = git@github.com:typicalbot/docs.git
