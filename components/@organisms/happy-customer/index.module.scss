@@ -1,0 +1,114 @@
+.container {
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4em 0;
+}
+
+.innerContainer {
+    background-color: #fff;
+    box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175);
+    border-radius: 0.3125rem;
+    padding: 4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col0 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: block;
+}
+
+.col1 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.icon {
+    border-radius: 0.3125rem;
+    box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175);
+}
+
+.body {
+    padding: 6rem 1.5rem 1.5rem;
+    height: 100%;
+}
+
+.col2 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.col3 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.pr {
+    padding-right: 2rem;
+}
+
+.blockquote {
+    color: #1e2022;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.mediaBody {
+    flex: 1;
+}
+
+.media > span {
+   font-size: 0.875rem;
+}
+
+.name {
+    color: #1e2022;
+    font-weight: 600;
+}
+
+.hr {
+    display: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 0.0625rem solid #e7eaf3;
+    position: relative;
+}
+
+.hr::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-left: 0.0625rem solid #e7eaf3;
+    content: "";
+}
+
+.pl {
+    padding-left: 2rem;
+}
+
+.pl > span {
+    color: #377dff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pl > p {
+    font-size: 0.875rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}

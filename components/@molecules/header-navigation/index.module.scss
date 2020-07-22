@@ -13,30 +13,27 @@
 .flex > :global(a), .flex > span {
     text-decoration: none;
     font-size: .875rem;
-    color: #fff;
+    color: #1f4568;
     padding-left: .75rem;
     padding-right: .75rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     line-height: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: .375rem;
     transition: background-color .15s cubic-bezier(.4, 0, .2, 1);
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     cursor: pointer;
 }
 
 .flex > span {
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 23px;
+    font-weight: 900;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .flex > :global(a):not(:first-child) {
     margin-left: 1rem;
-}
-
-.flex > :global(a):hover {
-    background-color: #2C313A;
 }
 
 .left0 {

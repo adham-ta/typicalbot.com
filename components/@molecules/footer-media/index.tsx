@@ -6,29 +6,25 @@ const FooterMedia: React.FC = () => (
     <div className={classes.media}>
         <FooterMediaList items={[
             { text: 'Product' },
-            { url: '#', text: 'Multilingual' },
-            { url: '#', text: 'Moderation' },
-            { url: '#', text: 'Customization' },
-            { url: '#', text: 'Entertainment' }
-        ]} />
-        <FooterMediaList items={[
-            { text: 'Resources' },
-            { url: '#', text: 'Blog' },
-            { url: '/changelog', text: 'Changelog' },
-            { url: '#', text: 'Documentation' }
+            { url: '#', text: 'Add to Discord' },
+            { url: '#', text: 'Pro' }
         ]} />
         <FooterMediaList items={[
             { text: 'Company' },
             { url: '#', text: 'About' },
-            { url: '#', text: 'Careers' },
-            { url: 'https://typicalbot.com/terms', text: 'Terms of Service' },
-            { url: 'https://typicalbot.com/privacy', text: 'Privacy Policy' },
-            { url: '#', text: 'Security' }
+            { url: '#', text: 'Careers' }
         ]} />
         <FooterMediaList items={[
-            { text: 'Support' },
-            { url: 'mailto:support@typicalbot.com', text: 'Contact Us' },
-            { url: '/support', text: 'Discord Community' }
+            { text: 'Resources' },
+            { url: '#', text: 'Support' },
+            { url: '#', text: 'Blog' },
+            { url: '/docs/introduction', text: 'Documentation' }
+        ]} />
+        <FooterMediaList items={[
+            { text: 'Legal' },
+            { url: '#', text: 'Terms' },
+            { url: '#', text: 'Privacy' },
+            { url: '#', text: 'Guidelines' }
         ]} />
     </div>
 );
