@@ -16,6 +16,12 @@ const Layout: React.FC<LayoutProps> = ({title, children}) => (
 
             <title>{title} &ndash; TypicalBot</title>
 
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://typicalbot.com"/>
+            <meta property="og:title" content="TypicalBot - Discord Bot"/>
+            <meta property="og:description" content="TypicalBot seamlessly helps you and your moderators moderate your community and entertains your members."/>
+            <meta property="og:image" content="https://typicalbot.com/img/typicalbot-transparent.png"/>
+
             <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
 
             <link rel="icon" href="/img/favicon-32.png" sizes="32x32"/>
