@@ -21,6 +21,20 @@ const Footer: React.FC = () => (
                             </li>
                         </ul>
                     </nav>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/company/typicalbot">
+                                    <i className="fab fa-linkedin-in"/> LinkedIn
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Typical_Bot">
+                                    <i className="fab fa-twitter"/> Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </footer>
         </div>

@@ -30,6 +30,7 @@ const Layout: React.FC<LayoutProps> = ({title, children}) => (
 
             <link rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"/>
+            <script src="https://kit.fontawesome.com/6ca40ab5f2.js" crossOrigin="anonymous"/>
         </Head>
         <Header/>
         {children}
