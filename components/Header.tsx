@@ -20,11 +20,11 @@ const Header: React.FC = () => {
                                         <g id="Layer_2" data-name="Layer 2">
                                             <g id="Layer_1-2" data-name="Layer 1">
                                                 <path className="cls-1"
-                                                      d="M260.26,0s-60.88,584.44,347,1108l-200.9,146.11S-50.23,797.52,4.56,0Z"/>
+                                                    d="M260.26,0s-60.88,584.44,347,1108l-200.9,146.11S-50.23,797.52,4.56,0Z"/>
                                                 <path className="cls-1"
-                                                      d="M503.77,0H753.38S716.85,407.89,917.75,712.29l-133.93,207S479.42,687.94,503.77,0Z"/>
+                                                    d="M503.77,0H753.38S716.85,407.89,917.75,712.29l-133.93,207S479.42,687.94,503.77,0Z"/>
                                                 <path className="cls-1"
-                                                      d="M1021.25,0H1557s188.72,907.1-791.43,1625.48L607.27,1442.84s700.11-560.09,681.85-1193.23H1021.25Z"/>
+                                                    d="M1021.25,0H1557s188.72,907.1-791.43,1625.48L607.27,1442.84s700.11-560.09,681.85-1193.23H1021.25Z"/>
                                             </g>
                                         </g>
                                     </svg>
@@ -51,13 +51,13 @@ const Header: React.FC = () => {
                                 </li>
                             </ul>
                             <div className="mobile">
-                                <div className={mobile ? "icon open" : "icon"} onClick={() => setMobile(!mobile)}>
+                                <div className={mobile ? 'icon open' : 'icon'} onClick={() => setMobile(!mobile)}>
                                     <div>
                                         <span/>
                                         <span/>
                                     </div>
                                 </div>
-                                <div className={mobile ? "mobile-menu open" : "mobile-menu"}>
+                                <div className={mobile ? 'mobile-menu open' : 'mobile-menu'}>
                                     <ul>
                                         <li>
                                             <Link href="/docs">
@@ -293,6 +293,6 @@ const Header: React.FC = () => {
             `}</style>
         </React.Fragment>
     );
-}
+};
 
 export default Header;

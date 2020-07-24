@@ -20,8 +20,8 @@ const Layout: React.FC<LayoutProps> = ({title, ogTitle, ogDescription, children}
 
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://typicalbot.com"/>
-            <meta property="og:title" content={ogTitle ?? "TypicalBot - Discord Bot"}/>
-            <meta property="og:description" content={ogDescription ?? "TypicalBot seamlessly helps you and your moderators moderate your community and entertains your members."}/>
+            <meta property="og:title" content={ogTitle ?? 'TypicalBot - Discord Bot'}/>
+            <meta property="og:description" content={ogDescription ?? 'TypicalBot seamlessly helps you and your moderators moderate your community and entertains your members.'}/>
             <meta property="og:image" content="https://typicalbot.com/img/typicalbot-transparent.png"/>
 
             <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
