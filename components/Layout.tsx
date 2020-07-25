@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({title, ogTitle, ogDescription, children}
             <link rel="apple-touch-icon" href="/img/favicon-167.png" sizes="167x167"/>
             <link rel="apple-touch-icon" href="/img/favicon-180.png" sizes="180x180"/>
 
-            <link rel="manifest" href="/site.webmanifest"/>
+            <link rel="manifest" href="/manifest.json"/>
 
             <link rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"/>
