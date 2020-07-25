@@ -8,7 +8,7 @@ const Footer: React.FC = () => (
                 <div className="copyright">
                     <nav>
                         <ul>
-                            <li>&copy; 2020 TypicalBot LLC</li>
+                            <li>&copy; {new Date().getFullYear()} TypicalBot LLC</li>
                             <li>
                                 <Link href="/legal/[slug]" as="/legal/terms">
                                     <a>Terms of Service</a>
