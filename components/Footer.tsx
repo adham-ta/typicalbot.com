@@ -33,6 +33,11 @@ const Footer: React.FC = () => (
                                     <i className="fab fa-twitter"/> Twitter
                                 </a>
                             </li>
+                            <li>
+                                <a href="https://github.com/typicalbot">
+                                    <i className="fab fa-github"/> GitHub
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
