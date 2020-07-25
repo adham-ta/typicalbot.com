@@ -24,11 +24,6 @@ const Footer: React.FC = () => (
                     <nav>
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/company/typicalbot">
-                                    <i className="fab fa-linkedin-in"/> LinkedIn
-                                </a>
-                            </li>
-                            <li>
                                 <a href="https://twitter.com/Typical_Bot">
                                     <i className="fab fa-twitter"/> Twitter
                                 </a>
@@ -36,6 +31,11 @@ const Footer: React.FC = () => (
                             <li>
                                 <a href="https://github.com/typicalbot">
                                     <i className="fab fa-github"/> GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/typicalbot">
+                                    <i className="fab fa-linkedin-in"/> LinkedIn
                                 </a>
                             </li>
                         </ul>
