@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
+import CookieMessage from 'components/CookieMessage';
 
 interface LayoutProps {
     title: string;
@@ -42,6 +43,7 @@ const Layout: React.FC<LayoutProps> = ({title, ogTitle, ogDescription, children}
         </Head>
         <Header/>
         {children}
+        <CookieMessage/>
         <Footer/>
     </React.Fragment>
 );
