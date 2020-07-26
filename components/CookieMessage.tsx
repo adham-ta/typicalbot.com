@@ -5,12 +5,10 @@ const CookieMessage: React.FC = () => (
     <React.Fragment>
         <div className="cookie-message">
             <h4>Cookies & Privacy</h4>
-            <p>Cookies help us improve our web content and deliver a personalized experience. By using this website,
-                you agree to our use of cookies.</p>
+            <p>We use cookies that keep you logged in while using our website. We also use Cloudflare, which uses cookies as well.
+                For more information, you can check out our <Link href="/legal/[slug]" as="/legal/privacy"><a>privacy policy</a></Link>.
+                Is this okay?</p>
             <p>
-                <Link href="/legal/[slug]" as="/legal/privacy">
-                    <a>More information</a>
-                </Link>
                 <button>Reject</button>
                 <button>Accept</button>
             </p>
