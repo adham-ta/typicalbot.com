@@ -26,7 +26,7 @@
     "dependencies": {
         "date-fns": "^2.15.0",
         "gray-matter": "^4.0.2",
-        "next": "^9.4.5-canary.43",
+        "next": "^9.5.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "remark": "^12.0.1",
@@ -45,6 +45,9 @@
         "eslint-plugin-react": "^7.20.3",
         "husky": "^4.2.5",
         "typescript": "^3.9.7"
+    },
+    "resolutions": {
+        "webpack": "^5.0.0-beta.22"
     },
     "engines": {
         "node": ">=14.0.0"
