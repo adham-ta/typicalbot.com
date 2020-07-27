@@ -3,7 +3,7 @@ module.exports = {
     experimental: {
         modern: true
     },
-    redirects() {
+    async redirects() {
         return [
             {
                 source: '/invite{/}?',
@@ -29,6 +29,31 @@ module.exports = {
                 source: '/donate{/}?',
                 destination: 'https://www.patreon.com/TypicalBot',
                 permanent: false
+            }
+        ]
+    },
+    async headers() {
+        return [
+            {
+                source: '/:path*',
+                headers: [
+                    {
+                        key: 'Referrer-Policy',
+                        value: 'strict-origin-when-cross-origin'
+                    },
+                    {
+                        key: 'X-Frame-Options',
+                        value: 'SAMEORIGIN'
+                    },
+                    {
+                        key: 'X-Content-Type-Options',
+                        value: 'nosniff'
+                    },
+                    {
+                        key: 'Feature-Policy',
+                        value: "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+                    }
+                ]
             }
         ]
     }
