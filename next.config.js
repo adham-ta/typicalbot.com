@@ -1,8 +1,7 @@
 module.exports = {
     poweredByHeader: false,
     experimental: {
-        modern: true,
-        optimizeFonts: true
+        modern: true
     },
     async redirects() {
         return [
