@@ -24,7 +24,6 @@
     },
     "homepage": "https://github.com/typicalbot/typicalbot.com#readme",
     "dependencies": {
-        "date-fns": "^2.15.0",
         "gray-matter": "^4.0.2",
         "next": "^9.5.1-canary.7",
         "react": "^16.13.1",

@@ -1,5 +1,4 @@
 import React from 'react';
-import DateFormatter from 'components/DateFormatter';
 
 interface PolicyProps {
     title: string;
@@ -12,7 +11,7 @@ const Policy: React.FC<PolicyProps> = ({title, effectiveDate, content}) => (
         <div className="container">
             <section className="policy">
                 <h1 className="heading">{title}</h1>
-                <p className="subheading">Last updated <DateFormatter dateString={effectiveDate}/></p>
+                <p className="subheading">Last updated {effectiveDate}</p>
                 <div className="content" dangerouslySetInnerHTML={{__html: content}}/>
             </section>
         </div>

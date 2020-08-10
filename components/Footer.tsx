@@ -10,13 +10,18 @@ const Footer: React.FC = () => (
                         <ul>
                             <li>&copy; {new Date().getFullYear()} TypicalBot LLC</li>
                             <li>
-                                <Link href="/legal/[slug]" as="/legal/terms">
+                                <Link href="/policies/[slug]" as="/policies/terms">
                                     <a>Terms of Service</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/legal/[slug]" as="/legal/privacy">
-                                    <a>Privacy Policy</a>
+                                <Link href="/policies/[slug]" as="/policies/privacy">
+                                    <a>Privacy</a>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/policies/[slug]" as="/policies/security">
+                                    <a>Security</a>
                                 </Link>
                             </li>
                         </ul>
