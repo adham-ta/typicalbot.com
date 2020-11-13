@@ -1,10 +1,6 @@
 module.exports = {
     poweredByHeader: false,
-    experimental: {
-        modern: true,
-        optimizeImages: true
-    },
-    async redirects() {
+    redirects() {
         return [
             {
                 source: '/invite{/}?',
@@ -33,7 +29,7 @@ module.exports = {
             }
         ]
     },
-    async headers() {
+    headers() {
         return [
             {
                 source: '/:path*',
