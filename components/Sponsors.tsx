@@ -49,6 +49,6 @@ const Sponsors: React.FC = () => (
             }
         `}</style>
     </React.Fragment>
-)
+);
 
 export default Sponsors;
