@@ -2,7 +2,7 @@ import React from 'react';
 import {NextPage} from 'next';
 import Layout from 'components/Layout';
 import Hero from 'components/Hero';
-import Sponsors from "../components/Sponsors";
+import Sponsors from '../components/Sponsors';
 
 const Page: NextPage = () => (
     <React.Fragment>
