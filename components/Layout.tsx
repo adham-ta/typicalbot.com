@@ -36,6 +36,19 @@ const Layout: React.FC<LayoutProps> = ({title, ogTitle, ogDescription, children}
 
             <link rel="manifest" href="/manifest.json"/>
 
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: `{
+                    "@context": "http://schema.org",
+                    "@type": "Organization",
+                    "name": "TypicalBot",
+                    "url": "https://typicalbot.com",
+                    "sameAs": [
+                        "https://twitter.com/Typical_Bot",
+                        "https://github.com/typicalbot",
+                        "https://www.linkedin.com/company/typicalbot"
+                    ]
+                }`}}/>
+
             <link rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"/>
             <script src="https://kit.fontawesome.com/6ca40ab5f2.js" crossOrigin="anonymous"/>
